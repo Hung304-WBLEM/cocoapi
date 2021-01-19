@@ -44,4 +44,5 @@ cocoEval.accumulate();
 cocoEval.summarize();
 
 %% generate Derek Hoiem style analyis of false positives (slow)
-if(0), cocoEval.analyze(); end
+%% if(0), cocoEval.analyze(); end
+cocoEval.analyze();

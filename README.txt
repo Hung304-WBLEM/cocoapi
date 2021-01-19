@@ -10,6 +10,6 @@ For substantially more details on the API please see http://cocodataset.org/#dow
 After downloading the images and annotations, run the Matlab, Python, or Lua demos for example usage.
 
 To install:
--For Matlab, add coco/MatlabApi to the Matlab path (OSX/Linux binaries provided)
+-For Matlab, 1) run this in matlab (must be in the MatlabApi folder): `mex('CFLAGS=\$CFLAGS -Wall -std=c99','-largeArrayDims','private/maskApiMex.c','../common/maskApi.c','-I../common/','-outdir','private');`, 2) add coco/MatlabApi to the Matlab path (OSX/Linux binaries provided)
 -For Python, run "make" under coco/PythonAPI
 -For Lua, run “luarocks make LuaAPI/rocks/coco-scm-1.rockspec” under coco/
